@@ -3,7 +3,15 @@ module.exports = {
   content: ["./**/*.html"],
   theme: {
     extend: {
+      animation: {
+        fadeIn: "fadeIn 1s ease-out",
+        bounceIn: "bounceIn 0.5s ease-in-out",
+      },
       colors: {
+        searchboxclr1: "#3023B2",
+        searchboxclr2: "#7F56D9",
+        sighnupbg1: "#083F9B",
+        sighnupbg2: "#7F56D9",
         bluecolor: "#0E38CD",
         fontcolor: "#4883FF",
         topfontcolor: "#0E38CD",
@@ -41,6 +49,12 @@ module.exports = {
       },
       boxShadow: {
         custom: "0 2px 10px rgba(0, 0, 0, 0.1)",
+      },
+      keyframes: {
+        bounceIn: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-5px)" },
+        },
       },
     },
   },
